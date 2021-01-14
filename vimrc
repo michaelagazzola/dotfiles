@@ -34,9 +34,11 @@ Plug 'benmills/vimux'                   " Better support for tmux.
 Plug 'bling/vim-bufferline'             " Buffer list in command line.
 Plug 'Yggdroot/indentLine'              " Show indent lines.
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-Plug 'ryanoasis/vim-devicons'
+"Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+"Plug 'ryanoasis/vim-devicons'
 Plug 'liuchengxu/vista.vim'
+Plug 'w0rp/ale'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 call plug#end()
 
 " general config
@@ -45,7 +47,7 @@ filetype plugin indent on                 " plugin = use per-filetype plugins
                                           " indent = use per-filetype indents
                                           " on     = use filetype detection
 let mapleader=','
-colorscheme badwolf
+colorscheme monokai-phoenix
 syntax on
 set backspace=indent,eol,start            " indent = allow backspace over auto-
                                           "          indent.
@@ -333,3 +335,25 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 nmap <Leader>v :Vista!!<CR>
 let g:vista_default_executive = 'coc'
 inoremap <C-c> <ESC>
+
+set wildignore+=*/.git/*,*/node_modules/*
+
+let g:ale_fixers = {
+      \ 'javascript': ['prettier', 'eslint'],
+      \ 'typescript': ['prettier', 'eslint']
+      \ }
+let g:ale_fix_on_save = 1
+
+"" The Silver Searcher
+if executable('ag')
+  " Use ag over grep
+  set grepprg=ag\ --nogroup\ --nocolor
+
+  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+
+  " " ag is fast enough that CtrlP doesn't need to cache
+  let g:ctrlp_use_caching = 0
+endif
+
+let NERDTreeHighlightCursorline = 0

@@ -1,0 +1,8 @@
+[user]
+	email = michaelagazzola@gmail.com
+	name = Michael Gazzola
+	signingkey = 320D413727EC714C
+[credential]
+	helper = cache --timeout 31536000
+[core]
+	editor = vim
