@@ -2,3 +2,141 @@
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
+[submodule "vim/bundle/Vundle.vim"]
+	path = vim/bundle/Vundle.vim
+	url = https://github.com/gmarik/Vundle.vim.git
+[submodule "vim/plugged/vim-better-whitespace"]
+	path = vim/plugged/vim-better-whitespace
+	url = https://github.com/ntpeters/vim-better-whitespace.git
+[submodule "vim/plugged/ctrlp.vim"]
+	path = vim/plugged/ctrlp.vim
+	url = https://github.com/ctrlpvim/ctrlp.vim.git
+[submodule "vim/plugged/vim-airline-themes"]
+	path = vim/plugged/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes.git
+[submodule "vim/plugged/vim-superman"]
+	path = vim/plugged/vim-superman
+	url = https://github.com/jez/vim-superman.git
+[submodule "vim/plugged/vim-sensible"]
+	path = vim/plugged/vim-sensible
+	url = https://github.com/tpope/vim-sensible.git
+[submodule "vim/plugged/vim-go"]
+	path = vim/plugged/vim-go
+	url = https://github.com/fatih/vim-go.git
+[submodule "vim/plugged/vim-over"]
+	path = vim/plugged/vim-over
+	url = https://github.com/osyo-manga/vim-over.git
+[submodule "vim/plugged/indentLine"]
+	path = vim/plugged/indentLine
+	url = https://github.com/Yggdroot/indentLine.git
+[submodule "vim/plugged/ale"]
+	path = vim/plugged/ale
+	url = https://github.com/w0rp/ale.git
+[submodule "vim/plugged/coc.nvim"]
+	path = vim/plugged/coc.nvim
+	url = https://github.com/neoclide/coc.nvim.git
+[submodule "vim/plugged/vista.vim"]
+	path = vim/plugged/vista.vim
+	url = https://github.com/liuchengxu/vista.vim.git
+[submodule "vim/plugged/delimitMate"]
+	path = vim/plugged/delimitMate
+	url = https://github.com/Raimondi/delimitMate.git
+[submodule "vim/plugged/vim-markdown"]
+	path = vim/plugged/vim-markdown
+	url = https://github.com/tpope/vim-markdown.git
+[submodule "vim/plugged/vim-gitgutter"]
+	path = vim/plugged/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
+[submodule "vim/plugged/syntastic"]
+	path = vim/plugged/syntastic
+	url = https://github.com/scrooloose/syntastic.git
+[submodule "vim/plugged/vim-tmux-navigator"]
+	path = vim/plugged/vim-tmux-navigator
+	url = https://github.com/christoomey/vim-tmux-navigator.git
+[submodule "vim/plugged/vim-airline"]
+	path = vim/plugged/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
+[submodule "vim/plugged/vim-bufferline"]
+	path = vim/plugged/vim-bufferline
+	url = https://github.com/bling/vim-bufferline.git
+[submodule "vim/plugged/rust.vim"]
+	path = vim/plugged/rust.vim
+	url = https://github.com/rust-lang/rust.vim.git
+[submodule "vim/plugged/nerdcommenter"]
+	path = vim/plugged/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter.git
+[submodule "vim/plugged/vimux"]
+	path = vim/plugged/vimux
+	url = https://github.com/benmills/vimux.git
+[submodule "vim/plugged/nerdtree"]
+	path = vim/plugged/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "vim/plugged/vim-colorschemes"]
+	path = vim/plugged/vim-colorschemes
+	url = https://github.com/flazz/vim-colorschemes.git
+[submodule "vim/bundle/vim-better-whitespace"]
+	path = vim/bundle/vim-better-whitespace
+	url = https://github.com/ntpeters/vim-better-whitespace.git
+[submodule "vim/bundle/ctrlp.vim"]
+	path = vim/bundle/ctrlp.vim
+	url = https://github.com/ctrlpvim/ctrlp.vim.git
+[submodule "vim/bundle/vim-airline-themes"]
+	path = vim/bundle/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes.git
+[submodule "vim/bundle/tagbar"]
+	path = vim/bundle/tagbar
+	url = https://github.com/majutsushi/tagbar.git
+[submodule "vim/bundle/vim-superman"]
+	path = vim/bundle/vim-superman
+	url = https://github.com/jez/vim-superman.git
+[submodule "vim/bundle/vim-sensible"]
+	path = vim/bundle/vim-sensible
+	url = https://github.com/tpope/vim-sensible.git
+[submodule "vim/bundle/vim-over"]
+	path = vim/bundle/vim-over
+	url = https://github.com/osyo-manga/vim-over.git
+[submodule "vim/bundle/indentLine"]
+	path = vim/bundle/indentLine
+	url = https://github.com/Yggdroot/indentLine.git
+[submodule "vim/bundle/tagbar-javascript.vim"]
+	path = vim/bundle/tagbar-javascript.vim
+	url = https://github.com/hushicai/tagbar-javascript.vim.git
+[submodule "vim/bundle/coc.nvim"]
+	path = vim/bundle/coc.nvim
+	url = https://github.com/neoclide/coc.nvim.git
+[submodule "vim/bundle/delimitMate"]
+	path = vim/bundle/delimitMate
+	url = https://github.com/Raimondi/delimitMate.git
+[submodule "vim/bundle/vim-markdown"]
+	path = vim/bundle/vim-markdown
+	url = https://github.com/tpope/vim-markdown.git
+[submodule "vim/bundle/vim-gitgutter"]
+	path = vim/bundle/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
+[submodule "vim/bundle/syntastic"]
+	path = vim/bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
+[submodule "vim/bundle/vim-tmux-navigator"]
+	path = vim/bundle/vim-tmux-navigator
+	url = https://github.com/christoomey/vim-tmux-navigator.git
+[submodule "vim/bundle/vim-airline"]
+	path = vim/bundle/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
+[submodule "vim/bundle/vim-bufferline"]
+	path = vim/bundle/vim-bufferline
+	url = https://github.com/bling/vim-bufferline.git
+[submodule "vim/bundle/rust.vim"]
+	path = vim/bundle/rust.vim
+	url = https://github.com/rust-lang/rust.vim.git
+[submodule "vim/bundle/nerdcommenter"]
+	path = vim/bundle/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter.git
+[submodule "vim/bundle/vimux"]
+	path = vim/bundle/vimux
+	url = https://github.com/benmills/vimux.git
+[submodule "vim/bundle/nerdtree"]
+	path = vim/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "vim/bundle/vim-colorschemes"]
+	path = vim/bundle/vim-colorschemes
+	url = https://github.com/flazz/vim-colorschemes.git
