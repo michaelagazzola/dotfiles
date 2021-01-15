@@ -1,6 +1,6 @@
 let SessionLoad = 1
 if &cp | set nocp | endif
-let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
+let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1
 let v:this_session=expand("<sfile>:p")
 silent only
 silent tabonly
@@ -11,6 +11,8 @@ endif
 set shortmess=aoO
 argglobal
 %argdel
+$argadd tmux.conf
+edit tmux.conf
 set splitbelow splitright
 set nosplitbelow
 set nosplitright
@@ -20,7 +22,6 @@ set winheight=1
 set winminwidth=0
 set winwidth=1
 argglobal
-enew
 setlocal fdm=syntax
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -29,7 +30,14 @@ setlocal fdl=3
 setlocal fml=1
 setlocal fdn=10
 setlocal fen
+let s:l = 200 - ((5 * winheight(0) + 13) / 27)
+if s:l < 1 | let s:l = 1 | endif
+keepjumps exe s:l
+normal! zt
+keepjumps 200
+normal! 0
 tabnext 1
+badd +0 tmux.conf
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0
   silent exe 'bwipe ' . s:wipebuf
 endif
@@ -40,7 +48,7 @@ let s:sx = expand("<sfile>:p:r")."x.vim"
 if filereadable(s:sx)
   exe "source " . fnameescape(s:sx)
 endif
-let &so = s:so_save | let &siso = s:siso_save
+let &g:so = s:so_save | let &g:siso = s:siso_save
 nohlsearch
 doautoall SessionLoadPost
 unlet SessionLoad
