@@ -39,6 +39,9 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'liuchengxu/vista.vim'
 Plug 'w0rp/ale'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'xolox/vim-session'
+Plug 'xolox/vim-misc'
+Plug 'tpope/vim-obsession'
 call plug#end()
 
 " general config
@@ -68,7 +71,7 @@ set cursorcolumn
 set wildmenu                              " Show menus for buffers.
 set foldmethod=syntax                     " Fold based on syntax.
 set foldnestmax=10                        " Fold max 10 levels.
-set foldlevel=3                           " Start autofolding after 2 levels.
+set foldlevel=6                           " Start autofolding after 6 levels.
 set ttyfast                               " Optimize for fast terminals connections.
 set gdefault                              " s[ubstitute] is global by default.
 set backupdir=~/.vim/backups
@@ -357,3 +360,5 @@ if executable('ag')
 endif
 
 let NERDTreeHighlightCursorline = 0
+
+let g:session_autosave_periodic = 15

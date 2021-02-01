@@ -11,8 +11,8 @@ endif
 set shortmess=aoO
 argglobal
 %argdel
-$argadd tmux.conf
-edit tmux.conf
+$argadd .gitignore
+edit .gitignore
 set splitbelow splitright
 set nosplitbelow
 set nosplitright
@@ -26,18 +26,18 @@ setlocal fdm=syntax
 setlocal fde=0
 setlocal fmr={{{,}}}
 setlocal fdi=#
-setlocal fdl=3
+setlocal fdl=6
 setlocal fml=1
 setlocal fdn=10
 setlocal fen
-let s:l = 200 - ((5 * winheight(0) + 13) / 27)
+let s:l = 1 - ((0 * winheight(0) + 38) / 77)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 200
-normal! 0
+keepjumps 1
+normal! 011|
 tabnext 1
-badd +0 tmux.conf
+badd +0 .gitignore
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0
   silent exe 'bwipe ' . s:wipebuf
 endif

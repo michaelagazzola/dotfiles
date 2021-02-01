@@ -5,5 +5,7 @@
   "list.insertMappings": {
     "<C-c>": "do:exit"
   },
-  "javascript.suggestionActions.enabled": false
+  "javascript.suggestionActions.enabled": false,
+  "eslint.options": { "useEslintrc": true },
+  "eslint.autoFixOnSave": true
 }
