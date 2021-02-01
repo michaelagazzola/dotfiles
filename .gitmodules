@@ -143,3 +143,12 @@
 [submodule "tmux"]
 	path = tmux
 	url = https://github.com/tmux/tmux.git
+[submodule "vim/plugged/vim-misc"]
+	path = vim/plugged/vim-misc
+	url = https://github.com/xolox/vim-misc
+[submodule "vim/plugged/vim-obsession"]
+	path = vim/plugged/vim-obsession
+	url = https://github.com/tpope/vim-obsession
+[submodule "vim/plugged/vim-session"]
+	path = vim/plugged/vim-session
+	url = https://github.com/xolox/vim-session
