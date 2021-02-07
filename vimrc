@@ -39,8 +39,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'liuchengxu/vista.vim'
 Plug 'w0rp/ale'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-Plug 'xolox/vim-session'
-Plug 'xolox/vim-misc'
 Plug 'tpope/vim-obsession'
 call plug#end()
 

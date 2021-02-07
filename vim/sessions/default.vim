@@ -4,15 +4,15 @@ let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-
 let v:this_session=expand("<sfile>:p")
 silent only
 silent tabonly
-cd ~/git/dotfiles
+cd ~
 if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
 argglobal
 %argdel
-$argadd .gitignore
-edit .gitignore
+$argadd .tmux.conf
+edit .tmux.conf
 set splitbelow splitright
 set nosplitbelow
 set nosplitright
@@ -35,9 +35,9 @@ if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
 keepjumps 1
-normal! 011|
+normal! 0
 tabnext 1
-badd +0 .gitignore
+badd +0 .tmux.conf
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0
   silent exe 'bwipe ' . s:wipebuf
 endif
