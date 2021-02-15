@@ -152,3 +152,6 @@
 [submodule "vim/plugged/vim-session"]
 	path = vim/plugged/vim-session
 	url = https://github.com/xolox/vim-session
+[submodule "vim/pack/colors/start/felipec"]
+	path = vim/pack/colors/start/felipec
+	url = https://github.com/felipec/vim-felipec
