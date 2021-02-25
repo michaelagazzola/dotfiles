@@ -2,6 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 cd ~
+neofetch
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/mgazzola/.oh-my-zsh"
@@ -9,6 +10,7 @@ export DISPLAY=172.21.0.1:0.0
 export PREFIX="$HOME/opt/cross"
 export TARGET=i686-elf
 export PATH="$PREFIX/bin:$PATH"
+export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$(go env GOPATH)/bin
 export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0
 

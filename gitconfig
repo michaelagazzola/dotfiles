@@ -6,3 +6,7 @@
 	helper = cache --timeout 31536000
 [core]
 	editor = vim
+[pull]
+	rebase = false
+[cinnabar]
+	helper = /tmp/tmpo0p7v6t_/git-cinnabar-master/git-cinnabar-helper

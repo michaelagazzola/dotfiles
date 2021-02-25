@@ -14,8 +14,7 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 " plugins
 
 call plug#begin('~/.vim/plugged')
-Plug 'vim-airline/vim-airline'          " Status bars on top and bottom. Need a Powerline font.
-Plug 'vim-airline/vim-airline-themes'
+Plug 'itchyny/lightline.vim'
 Plug 'scrooloose/syntastic'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'         " Better support for comments.
@@ -40,6 +39,7 @@ Plug 'liuchengxu/vista.vim'
 Plug 'w0rp/ale'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'tpope/vim-obsession'
+Plug 'chriskempson/base16-vim'
 call plug#end()
 
 " general config
@@ -48,7 +48,7 @@ filetype plugin indent on                 " plugin = use per-filetype plugins
                                           " indent = use per-filetype indents
                                           " on     = use filetype detection
 let mapleader=','
-colorscheme monokai-phoenix
+colorscheme base16-tomorrow-night-eighties
 syntax on
 set backspace=indent,eol,start            " indent = allow backspace over auto-
                                           "          indent.
@@ -360,3 +360,10 @@ endif
 let NERDTreeHighlightCursorline = 0
 
 let g:session_autosave_periodic = 15
+
+set noshowmode
+
+let g:lightline = {
+      \ 'colorscheme': 'Tomorrow_Night_Eighties',
+      \ }
+
