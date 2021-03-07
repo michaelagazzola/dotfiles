@@ -40,6 +40,7 @@ Plug 'w0rp/ale'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'tpope/vim-obsession'
 Plug 'chriskempson/base16-vim'
+Plug 'rhysd/vim-clang-format'
 call plug#end()
 
 " general config
@@ -356,6 +357,7 @@ if executable('ag')
   " " ag is fast enough that CtrlP doesn't need to cache
   let g:ctrlp_use_caching = 0
 endif
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|.git\|build'
 
 let NERDTreeHighlightCursorline = 0
 
@@ -366,4 +368,6 @@ set noshowmode
 let g:lightline = {
       \ 'colorscheme': 'Tomorrow_Night_Eighties',
       \ }
+
+autocmd FileType c ClangFormatAutoEnable
 

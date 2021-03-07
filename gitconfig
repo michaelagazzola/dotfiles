@@ -1,7 +1,7 @@
 [user]
 	email = michaelagazzola@gmail.com
 	name = Michael Gazzola
-	signingkey = 320D413727EC714C
+	signingkey = C69B73BC0DDA92A0
 [credential]
 	helper = cache --timeout 31536000
 [core]
@@ -10,3 +10,5 @@
 	rebase = false
 [cinnabar]
 	helper = /tmp/tmpo0p7v6t_/git-cinnabar-master/git-cinnabar-helper
+[commit]
+	gpgsign = true
